@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <form class="form">
+      <h2>Add Note</h2>
+      <label for="noteText">Text :</label>
+      <textarea id="noteText" placeholder="Add text"></textarea>
+      <button type="button" id="addNoteBtn">Add</button>
+    </form>
+
+    <div class="container">
+      <h1 class="title">My Priorities</h1>
+
+      <div class="buttons_bar">
+        <button class="btn btn-gray">
+          <span>0</span>
+          <span>All notes</span>
+        </button>
+        <button class="btn btn-green">
+          <span>0</span>
+          <span>Done</span>
+        </button>
+        <button class="btn btn-yellow">
+          <span>0</span>
+          <span>Pending</span>
+        </button>
+      </div>
+
+      <div class="search_bar">
+        <input type="text" class="search_input" placeholder="Search note..." />
+        <button type="button" id="showFormBtn">Add</button>
+      </div>
+
+      <div class="notes-container"></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+ 
